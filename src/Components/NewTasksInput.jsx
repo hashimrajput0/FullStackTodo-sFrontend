@@ -7,7 +7,7 @@ const NewTasksInput = () => {
 
 
 async function AddTask() {
-    axios.post("https://todobackend-ps81.onrender.com/api/tasks/create", 
+    const res = await axios.post("https://todobackend-ps81.onrender.com/api/tasks/create", 
         { title : TaskTitle, completed : false },
         { withCredentials : true }
     )
