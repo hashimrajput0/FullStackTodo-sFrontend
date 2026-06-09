@@ -19,7 +19,7 @@ async function AddTask() {
 
 
   return (
-    <div className='w-[100] flex gap-5 ml-10 mt-5 mb-5'>
+    <div className='w-full flex gap-5 ml-10 mt-5 mb-5'>
         <input value={TaskTitle} onChange={ (e) => {setTaskTitle(e.target.value)}} type="text" className='bg-white w-full h-10 rounded border-2' placeholder='Your Tasks....' />
         <button onClick={AddTask} className='text-white py-2 px-4 bg-green-400 rounded font-bold hover:scale-105 active:scale-95 transition cursor-pointer border-0' >Add</button>
     </div>
